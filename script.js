@@ -12,40 +12,42 @@ function getComputerChoice(){
 }
 
 function playRound(playerSelection, computerSelection) {
-    switch(playerSelection, computerSelection){
-        case ("Rock", "Rock"):
+
+    const tuple = [playerSelection, computerSelection]    
+    switch (JSON.stringify(tuple)){
+        case JSON.stringify(["Rock", "Rock"]):
             return "Draw";
             break;
 
-        case ("Rock", "Paper"):
+        case JSON.stringify(["Rock", "Paper"]):
             return "Lose";
             break;
 
-        case ("Rock", "Scissors"):
+        case JSON.stringify(["Rock", "Scissors"]):
             return "Win!";
             break;
 
-        case ("Paper", "Rock"):
+        case JSON.stringify(["Paper", "Rock"]):
             return "Win!";
             break;
 
-        case ("Paper", "Paper"):
+        case JSON.stringify(["Paper", "Paper"]):
             return "Draw";
             break;
 
-        case ("Paper", "Scissors"):
+        case JSON.stringify(["Paper", "Scissors"]):
             return "Lose";
             break;
         
-        case ("Scissors", "Rock"):
+        case JSON.stringify(["Scissors", "Rock"]):
             return "Lose!";
             break;
     
-        case ("Scissors", "Paper"):
+        case JSON.stringify(["Scissors", "Paper"]):
             return "Win";
             break;
     
-        case ("Scissors", "Scissors"):
+        case JSON.stringify(["Scissors", "Scissors"]):
             return "Draw";
             break;
     
@@ -58,4 +60,4 @@ function playRound(playerSelection, computerSelection) {
   }
    
 
-console.log(playRound("Rock", "Scissors"));
+console.log(playRound("Paper", "Scissors"));
