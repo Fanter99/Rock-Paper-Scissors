@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    background-color: darkgreen;
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    height: 80%;
+    width: 25%;
+}

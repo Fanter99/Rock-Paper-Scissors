@@ -1,5 +1,3 @@
-console.log("The Game shall begin!\n");
-
 const Figures = {
     Rock : "Rock",
     Paper : "Paper",
@@ -99,4 +97,4 @@ function game() {
     }
 }  
 
-game()
+//game()
