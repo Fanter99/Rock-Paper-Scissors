@@ -4,4 +4,4 @@ will made in 2 Phases:
 
     1. Basic Javasript logic
 
-    2. UI design { In Progress }
+    2. UI design
