@@ -2,18 +2,55 @@ body{
     height: 100vh;
     margin: 0;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.window{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 40vh;
+    margin-top: 5vh;;
+
+}
+.window div{
+
+    flex-basis: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-weight: bold;
+    font-size: 80px;
 }
-div{
-    background-color: darkgreen;
+.elements{
+    background-color: rgb(15, 22, 15);
     display: flex;
-    width: 90%;
-    height: 80vh;
+    width: 70%;
+    height: 40vh;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 5vh;
+
 }
 button{
+    background-color: #26006e;
+    border: none;
     height: 80%;
     width: 25%;
+    border-radius: 15px;
+}   
+button:active{
+    box-shadow: inset 2px 2px 1px 5px whitesmoke;
+    padding: 20px;
+}
+button:hover{
+    border: solid white;
+}
+img{
+    width: 80%;
+    height: 80%;
 }
